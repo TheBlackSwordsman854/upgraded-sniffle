@@ -2,11 +2,27 @@
   "name": "bulletproof-epeer",
   "version": "1.0.0",
   "description": "",
-  "private":"true",
+  "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack serve --open --config=./webpack/webpack.config.dev.js --progress --color",
+    "build": "webpack --config=./webpack/webpack.config.prod.js --progress --color",
+    "start": "node ./scripts/start-site.js",
+    "preview": "pnpm build && pnpm start"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "express": "^4.18.2",
+    "html-webpack-plugin": "^5.5.0",
+    "vue-loader": "^17.0.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  }
 }
