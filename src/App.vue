@@ -1,13 +1,38 @@
-<script setup>
-import { ref, onMounted } from "vue";
+<script setup lang="ts">
+import { computed } from "vue";
 
-const hello = ref();
+import { useDoor } from "@/useDoor";
+import OpendDoor from "@/OpendDoor.vue";
+import ClosedDoor from "@/ClosedDoor.vue";
+const { isOpen, open, toggle, close } = useDoor(false);
 
-onMounted(()=>{
-    hello.value.innerHTML = "Hello! I am VUE 3 + WebPack 5!";
-})
+const showDoor = computed(()=>{
+    if(isOpen.value === true){
+        return OpendDoor
+    };
+    return ClosedDoor
+});
+
+const openDoor = ()=>{
+    if(isOpen.value === true){
+        return;
+    }
+    open();
+}
+
+const closeDoor = ()=>{
+    if(isOpen.value === false){
+        return;
+    }
+    close();
+}
+
 </script>
 
 <template>
-<h1 ref="hello">Loading...</h1>
+<component :is="showDoor" />
+
+<button @click="toggle" v-text="'toggle'" />
+<button @click="openDoor" v-text="'open'" />
+<button @click="closeDoor" v-text="'close'"/>
 </template>
