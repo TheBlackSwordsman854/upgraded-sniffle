@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "webpack serve --open --config=./webpack/webpack.config.dev.js --progress --color",
-    "build": "pnpm dts:check && webpack --config=./webpack/webpack.config.prod.js --progress --color",
+    "build": "pnpm lint:check && pnpm dts:check && webpack --config=./webpack/webpack.config.prod.js --progress --color",
     "start": "node ./scripts/start-site.js",
     "preview": "pnpm build && pnpm start",
     "dts": "vue-tsc --declaration --emitDeclarationOnly",
