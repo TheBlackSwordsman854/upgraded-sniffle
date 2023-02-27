@@ -10,7 +10,9 @@
     "start": "node ./scripts/start-site.js",
     "preview": "pnpm build && pnpm start",
     "dts": "vue-tsc --declaration --emitDeclarationOnly",
-    "dts:check": "vue-tsc --noEmit"
+    "dts:check": "vue-tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "keywords": [],
   "author": "",
@@ -23,6 +25,7 @@
     "esbuild-loader": "^3.0.1",
     "express": "^4.18.2",
     "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.8.4",
     "sass": "^1.58.3",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
