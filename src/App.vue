@@ -6,33 +6,32 @@ import OpendDoor from "@/OpendDoor.vue";
 import ClosedDoor from "@/ClosedDoor.vue";
 const { isOpen, open, toggle, close } = useDoor(false);
 
-const showDoor = computed(()=>{
-    if(isOpen.value === true){
-        return OpendDoor
-    };
-    return ClosedDoor
+const showDoor = computed(() => {
+  if (isOpen.value === true) {
+    return OpendDoor;
+  }
+  return ClosedDoor;
 });
 
-const openDoor = ()=>{
-    if(isOpen.value === true){
-        return;
-    }
-    open();
-}
+const openDoor = () => {
+  if (isOpen.value === true) {
+    return;
+  }
+  open();
+};
 
-const closeDoor = ()=>{
-    if(isOpen.value === false){
-        return;
-    }
-    close();
-}
-
+const closeDoor = () => {
+  if (isOpen.value === false) {
+    return;
+  }
+  close();
+};
 </script>
 
 <template>
-<component :is="showDoor" />
+  <component :is="showDoor" />
 
-<button @click="toggle" v-text="'toggle'" />
-<button @click="openDoor" v-text="'open'" />
-<button @click="closeDoor" v-text="'close'"/>
+  <button @click="toggle" v-text="'toggle'" />
+  <button @click="openDoor" v-text="'open'" />
+  <button @click="closeDoor" v-text="'close'" />
 </template>

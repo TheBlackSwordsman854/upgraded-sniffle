@@ -1,4 +1,4 @@
-import "@/base"
+import "@/base";
 import { createApp } from "vue";
 import App from "./App.vue";
 

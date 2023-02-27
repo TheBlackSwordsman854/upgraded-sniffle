@@ -1,20 +1,20 @@
 {
-    "compilerOptions": {
-        "baseUrl": "./src",
-        "outDir": "./dist/",
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "es6",
-        "target": "es5",
-        "jsx": "preserve",
-        "allowJs": true,
-        "moduleResolution": "node",
-        "paths": {
-            "@/*": ["*"]
-        },
-        "strict": true,
-        "lib": ["es2018", "dom"],
-        "isolatedModules": true,
-        "skipLibCheck": true
-    }
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "preserve",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "strict": true,
+    "lib": ["es2018", "dom"],
+    "isolatedModules": true,
+    "skipLibCheck": true
+  }
 }
