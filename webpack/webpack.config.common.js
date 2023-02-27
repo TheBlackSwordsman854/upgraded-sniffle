@@ -10,10 +10,15 @@ module.exports = {
         alias: {
             "@": path.resolve(__dirname, "../src"),
         },
-        extensions: ['.tsx', '.ts', '.js', ".vue"],
+        extensions: ['.tsx', '.ts', '.js', ".vue", ".css"],
     },
     module: {
         rules: [
+            {
+                test: /\.(css)$/i,
+                include: path.resolve(__dirname, "../src"),
+                use: ["style-loader", "css-loader"],
+            },
             {
                 test: /\.(js|ts|jsx|tsx)$/,
                 include: path.resolve(__dirname, "../src"),
