@@ -38,6 +38,16 @@ module.exports = {
         include: path.resolve(__dirname, "../src"),
         loader: "vue-loader",
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        include: path.resolve(__dirname, "../src"),
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        include: path.resolve(__dirname, "../src"),
+        type: "asset/resource",
+      },
     ],
   },
   plugins: [
