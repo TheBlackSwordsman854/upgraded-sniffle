@@ -10,14 +10,14 @@ module.exports = {
         alias: {
             "@": path.resolve(__dirname, "../src"),
         },
-        extensions: ['.tsx', '.ts', '.js', ".vue", ".css"],
+        extensions: ['.tsx', '.ts', '.js', ".vue", ".css", ".scss", ".sass"],
     },
     module: {
         rules: [
             {
-                test: /\.(css)$/i,
+                test: /\.(css|scss|sass)$/i,
                 include: path.resolve(__dirname, "../src"),
-                use: ["style-loader", "css-loader"],
+                use: ["style-loader", "css-loader", "sass-loader"],
             },
             {
                 test: /\.(js|ts|jsx|tsx)$/,
