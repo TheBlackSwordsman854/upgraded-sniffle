@@ -34,6 +34,7 @@
       {
         "vue": "always"
       }
-    ]
+    ],
+    "import/prefer-default-export": ["off", { "target": "single" }]
   }
 }
