@@ -1,0 +1,6 @@
+dist
+node_modules
+src/**/*.d.ts
+webpack/**/*.js
+scripts/**/*.js
+package.json
