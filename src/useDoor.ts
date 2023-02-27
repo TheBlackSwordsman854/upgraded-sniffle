@@ -1,6 +1,6 @@
 import { ref } from "vue";
 
-export function useDoor(initial = false) {
+export default function useDoor(initial = false) {
   const isOpen = ref(initial);
 
   function setIsOpen(value: boolean) {

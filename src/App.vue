@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-import { useDoor } from "@/useDoor";
+import useDoor from "@/useDoor";
 import OpendDoor from "@/OpendDoor.vue";
 import ClosedDoor from "@/ClosedDoor.vue";
+
 const { isOpen, open, toggle, close } = useDoor(false);
 
 const showDoor = computed(() => {
