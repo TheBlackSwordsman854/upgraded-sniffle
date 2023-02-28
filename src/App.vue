@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { RouterView } from "vue-router";
+</script>
+
 <template>
-  <div>I am New E-Peer!</div>
+  <RouterView />
 </template>
