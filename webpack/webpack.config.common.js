@@ -6,6 +6,9 @@ module.exports = {
   entry: {
     main: path.resolve(__dirname, "../src/main.ts"),
   },
+  output: {
+    publicPath: '/',
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "../src"),

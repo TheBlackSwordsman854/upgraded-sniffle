@@ -6,5 +6,6 @@ const router = useRouter();
 
 <template>
   <div>Bulletproof E-Peer</div>
+  初始頁面
   <button @click="router.push({ name: 'login' })" v-text="'登入'" />
 </template>

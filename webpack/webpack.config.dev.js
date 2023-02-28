@@ -7,6 +7,7 @@ module.exports = merge(common, {
   mode: "development",
   devServer: {
     static: "./dist",
+    historyApiFallback: { index: "/index.html" },
   },
   plugins: [
     new HtmlWebpackPlugin({

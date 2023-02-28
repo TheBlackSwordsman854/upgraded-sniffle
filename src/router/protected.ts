@@ -1,6 +1,6 @@
-// import { MainLayout } from "@/components/Layout";
+import { MainLayout } from "@/components/layout";
 
-// const DashboardView = () => import("@/features/misc/routes/DashboardView.vue");
+const DashboardView = () => import("@/features/misc/routes/DashboardView.vue");
 // const UsersView = () => import("@/features/users/routes/UsersView.vue");
 // const ProfileView = () => import("@/features/users/routes/ProfileView.vue");
 // const DiscussionsView = () =>
@@ -9,11 +9,11 @@
 //   import("@/features/discussions/routes/DiscussionView.vue");
 
 export const protectedPaths = [
-  // {
-  //   path: "",
-  //   name: "dashboard",
-  //   component: DashboardView,
-  // },
+  {
+    path: "",
+    name: "dashboard",
+    component: DashboardView,
+  },
   // {
   //   path: "users",
   //   name: "users",
@@ -37,9 +37,9 @@ export const protectedPaths = [
 ];
 
 export const protectedRoutes = [
-  // {
-  //   path: "/app",
-  //   component: MainLayout,
-  //   children: protectedPaths,
-  // },
+  {
+    path: "/app",
+    component: MainLayout,
+    children: protectedPaths,
+  },
 ];

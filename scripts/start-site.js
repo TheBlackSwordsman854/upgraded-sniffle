@@ -2,6 +2,7 @@ const { access } = require("fs/promises");
 const { constants } = require("fs");
 const path = require("path");
 const express = require("express");
+const history = require('connect-history-api-fallback');
 
 const distPath = path.resolve(__dirname, "../dist");
 const siteHost = "localhost";
@@ -19,6 +20,9 @@ const canAccessDistPath = async () => {
 
 const startSite = () => {
   const app = express();
+  app.use(history({
+    index: '/index.html'
+  }));
   app.use(express.static(distPath));
   app.listen(sitePort, siteHost, function () {
     console.log(`Your preview site: http://${siteHost}:${sitePort}`);
