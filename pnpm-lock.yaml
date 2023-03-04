@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@headlessui/vue': ^1.7.12
+  '@heroicons/vue': ^2.0.16
   '@typescript-eslint/eslint-plugin': ^5.54.0
   '@typescript-eslint/parser': ^5.54.0
   connect-history-api-fallback: ^2.0.0
@@ -32,6 +34,8 @@ specifiers:
   windicss-webpack-plugin: ^1.7.8
 
 dependencies:
+  '@headlessui/vue': 1.7.12_vue@3.2.47
+  '@heroicons/vue': 2.0.16_vue@3.2.47
   vue: 3.2.47
   vue-router: 4.1.6_vue@3.2.47
 
@@ -317,6 +321,23 @@ packages:
     resolution: {integrity: sha512-JXdzbRiWclLVoD8sNUjR443VVlYqiYmDVT6rGUEIEHU5YJW0gaVZwV2xgM7D4arkvASqD0IlLUVjHiFuxaftRw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@headlessui/vue/1.7.12_vue@3.2.47:
+    resolution: {integrity: sha512-IV0k1I2I8Bj37HljFF231Y9cpldfiucf+inMCxA/VPoQT6UTxo0N/rb78CrogBxXNfsPxKmz3y/nlv+eRz6zvg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.47
+    dev: false
+
+  /@heroicons/vue/2.0.16_vue@3.2.47:
+    resolution: {integrity: sha512-saVAExLlGu6epqmS543qeWd/UOJUxpTJyK9aXeFGqS3VIW8X7yyJQmUGT40A38gBEAxMOdTdH9jFSh8sjPFM7A==}
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      vue: 3.2.47
+    dev: false
 
   /@humanwhocodes/config-array/0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
