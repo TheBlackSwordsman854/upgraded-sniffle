@@ -25,7 +25,13 @@
     "import/no-unresolved": [
       "error",
       {
-        "ignore": ["^@/"]
+        "ignore": [
+          "^@/",
+          "./virtual:windi",
+          "./virtual:windi-base",
+          "./virtual:windi-components",
+          "./virtual:windi-utilities"
+        ]
       }
     ],
     "import/extensions": [

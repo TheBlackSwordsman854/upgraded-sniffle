@@ -1,6 +1,7 @@
 const path = require("path");
 const { VueLoaderPlugin } = require("vue-loader");
 const { DefinePlugin } = require("webpack");
+const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -58,6 +59,9 @@ module.exports = {
     new DefinePlugin({
       __VUE_PROD_DEVTOOLS__: false,
       __VUE_OPTIONS_API__: false,
+    }),
+    new WindiCSSWebpackPlugin({
+      virtualModulePath: 'src',
     }),
   ],
 };
