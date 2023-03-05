@@ -1,9 +1,4 @@
-// import "./virtual:windi";
-
-import "./virtual:windi-base";
-import "./virtual:windi-components";
-import "./virtual:windi-utilities";
-
+import "./virtual:windi";
 import { createApp } from "vue";
 
 import App from "@/App.vue";
