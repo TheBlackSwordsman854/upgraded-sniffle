@@ -2,8 +2,8 @@
 
 - [ ] 命名整理
 - [ ] auth 的 provider
-- [ ] css style
-- [ ] ui framework
+- [x] css style
+- [x] ui framework
 - [ ] 表單驗證
 - [x] 基本組件
 - [ ] 基本子組件 ex: button head?
