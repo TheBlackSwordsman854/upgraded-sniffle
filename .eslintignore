@@ -5,3 +5,4 @@ webpack/**/*.js
 scripts/**/*.js
 package.json
 windi.config.ts
+css-data.json
