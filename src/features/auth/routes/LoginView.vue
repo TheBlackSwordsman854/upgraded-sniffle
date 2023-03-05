@@ -9,7 +9,6 @@ const onSuccess = () => {
 </script>
 
 <template>
-  登入頁面
   <input type="email" placeholder="email" />
   <input type="password" placeholder="password" />
   <button @click="onSuccess" v-text="'登入'" />

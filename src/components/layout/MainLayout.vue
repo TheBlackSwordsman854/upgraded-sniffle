@@ -5,8 +5,8 @@ import { AppSidebar, UserNavigation } from "@/components/misc";
 </script>
 
 <template>
-  <div>我是主頁面layout</div>
-  <div style="border: 5px solid blue">
+  <div></div>
+  <div>
     <AppSidebar />
     <div>
       <div>

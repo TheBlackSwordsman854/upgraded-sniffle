@@ -14,12 +14,8 @@ const userNavigation = [
 </script>
 
 <template>
-  <div>我控制使用者頁面跳轉的bar！</div>
-  <div
-    v-for="item in userNavigation"
-    :key="item.name"
-    style="border: 3px solid red"
-  >
+  <div></div>
+  <div v-for="item in userNavigation" :key="item.name">
     <RouterLink :to="item.to" @click="item.onClick">
       {{ item.name }}
     </RouterLink>

@@ -12,13 +12,8 @@ const navigation = [{ name: "Dashboard", to: { name: "dashboard" } }].filter(
 </script>
 
 <template>
-  <div>我控制頁面跳轉的bar！</div>
-  <RouterLink
-    v-for="item in navigation"
-    :key="item.name"
-    style="border: 3px solid green"
-    :to="item.to"
-  >
+  <div></div>
+  <RouterLink v-for="item in navigation" :key="item.name" :to="item.to">
     {{ item.name }}
   </RouterLink>
 </template>
